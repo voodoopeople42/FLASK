@@ -4,6 +4,5 @@ click==6.7
 Flask==0.12.2
 idna==2.6
 itsdangerous==0.24
-MarkupSafe==1.0a
 requests==2.18.4
 
