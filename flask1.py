@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template
-from intro_to_flask import app
 import datetime 
 import json 
 import hashlib
