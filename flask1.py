@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import datetime 
 import json 
 import hashlib
-from flask.ext.hashing import Hashing
+import os
 from logging.handlers import RotatingFileHandler
 import logging
 import requests
@@ -11,10 +11,8 @@ from config import SHOP_ID,SHOP_SECRET_KEY
 
 app = Flask(__name__)
 app.config.from_object('config')
-hashing = Hashing()
-app = create_app()
-hashing.init_app(app)
 app.debug = False
+port = int(os.environ.get('PORT', 5000))
 app.run()
 
 # Set the secret key to some random bytes. Keep this really secret!
