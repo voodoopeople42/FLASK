@@ -1,0 +1,2 @@
+SHOP_ID = 5
+SHOP_SECRET_KEY = 'SecretKey01'
